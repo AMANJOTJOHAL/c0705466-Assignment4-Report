@@ -1,0 +1,15 @@
+
+final Report
+1) how many lines in total are there in the file: 
+ans:4,016 lines
+2) how many words are there In the file: 
+ans:20080 words
+3) Line numbers of the lines which contain both of these words:
+  sea and fare (cover both upper and lower case)
+  ans:8
+4) line numbers of the lines which contain the words:
+word: Fare
+without the word:war
+ans:
+5) average number of letters per word returned as a float
+ans:
