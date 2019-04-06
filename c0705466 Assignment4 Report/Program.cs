@@ -15,13 +15,15 @@ namespace c0705466_Assignment4_Report
         {
             Program p = new Program();
             p.Beowulf = new ArrayList();
+            p.ReadTextFiles();
+            Console.ReadLine();
 
         }
         public void Run() { this.ReadTextFiles(); }
         public void ReadTextFiles()
         {
             // Read file using StreamerReader. Reads file line by line
-            using (StreamReader file = new StreamReader("c:/area51/beowful.txt"))
+            using (StreamReader file = new StreamReader(@"U:\Users\705466\Downloads/Beowful.txt"))
             {
                 int counter = 0;
                 string ln;
@@ -30,6 +32,7 @@ namespace c0705466_Assignment4_Report
                 {
                     Console.WriteLine(ln);
                     Beowulf.Add(ln);
+                    counter++;
 
                 }
                 file.Close();
