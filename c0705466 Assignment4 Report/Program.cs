@@ -37,8 +37,8 @@ namespace c0705466_Assignment4_Report
 
                 }
                 file.Close();
-                Console.WriteLine("File has {counter} lines.");
-                Console.WriteLine("File has {counter*5 Words.");
+                Console.WriteLine($"File has {counter} lines.");
+                Console.WriteLine($"File has {counter*5} Words.");
             }
         }
         public int FindNumberofBlankSpaces(string line)
