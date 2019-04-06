@@ -64,9 +64,10 @@ public void wordfinder()
     int f = 0;
     foreach (var line in File.ReadAllLines("Beowulf.txt"))
     {
-        if(line.Contains("sea") && line.Contains("fare"))
+        f++;
+        if (line.Contains("sea") && line.Contains("fare"))
         {
-            f++;
+           
        
         }
         Console.WriteLine(f);
@@ -164,5 +165,62 @@ public void wordfinder()
 
 
     }
+    public void Letters()
+
+
+
+    {
+
+
+
+
+
+
+
+        StreamReader reader = new StreamReader("Beowulf.txt");
+
+
+
+        string script = reader.ReadToEnd();
+
+
+
+        int numberOfLetters = 0;
+
+
+
+        foreach (char letter in script)
+
+
+
+        {
+
+
+
+            numberOfLetters++;
+
+
+
+        }
+
+
+
+        Console.WriteLine(numberOfLetters);
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+}
 }
 
